@@ -1,6 +1,6 @@
 package com.cautiouspear.tutorialmod.item;
 
-import com.cautiouspear.tutorialmod.TutorialMod;
+import com.cautiouspear.TutorialMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
