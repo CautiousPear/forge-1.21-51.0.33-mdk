@@ -1,6 +1,7 @@
 package com.cautiouspear;
 
 import com.cautiouspear.tutorialmod.block.ModBlocks;
+import com.cautiouspear.tutorialmod.item.ModCreativeModeTabs;
 import com.cautiouspear.tutorialmod.item.ModItem;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +34,8 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItem.register(modEventBus);
         ModBlocks.register(modEventBus);
